@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="Особиста майстерня Мирослава: від понад 10 роботів на Arduino до нових відкриттів із Raspberry Pi та Freenove.">
+  <title>Майстерня Мирослава — маленькі кроки, справжні винаходи</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">До вмісту</a>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Майстерня Мирослава — на початок"><span class="brand-icon">м<span>·</span></span><span>МИРОСЛАВ<span class="brand-sub">МАЙСТЕРНЯ ВИНАХОДІВ</span></span></a>
+  <nav aria-label="Основна навігація"><a href="#route">Мій маршрут</a><a href="#workbench">Майстерня</a><a href="#about">Про мене</a><a href="#album">Фотоальбом</a></nav>
+  <a class="header-link" href="#journal">Мій щоденник <span>↗</span></a>
+</header>
+<main id="main">
+  <section class="hero wrap" id="home">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> ОСОБИСТИЙ ЩОДЕННИК ВИНАХОДІВ</div>
+      <h1>Привіт,<br>я Мирослав<span class="orange">.</span><br><span class="hero-outline">Я створюю.</span></h1>
+      <p class="hero-intro">Мені 9. Я починав з Arduino та зробив <strong>понад 10 роботів</strong>. Тепер відкриваю світ Raspberry Pi — по одному винаходу за раз.</p>
+      <a class="button dark" href="#route">До наступного відкриття <span>↗</span></a>
+      <div class="hero-footnote"><span class="hand-star">✳</span><span>Спробувати. Зрозуміти. Зробити своє.</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="photo-frame"><img src="assets/memory-4072.jpg" alt="Портрет Мирослава" fetchpriority="high" width="1200" height="1600"><div class="photo-label">МИРОСЛАВ / ДОСЛІДНИК СВІТУ</div></div>
+      <div class="sticker sticker-top">Є ідея?<br><strong>ЗБЕРЕМО!</strong><span>↗</span></div>
+      <div class="sticker sticker-bottom"><span>10+</span> роботів<br>і це лише початок</div>
+      <span class="spark spark-one" aria-hidden="true">✳</span><span class="spark spark-two" aria-hidden="true">+</span>
+    </div>
+  </section>
+  <div class="ticker" aria-hidden="true"><div>ARDUINO <span>✳</span> RASPBERRY PI <span>✳</span> PYTHON <span>✳</span> ШАХИ <span>✳</span> НОВІ ІДЕЇ <span>✳</span> ARDUINO <span>✳</span> RASPBERRY PI <span>✳</span> PYTHON <span>✳</span></div></div>
+
+  <section class="wrap route-section" id="route">
+    <div class="section-top"><div><div class="eyebrow">01 / ВІД ІДЕЇ ДО ВИНАХОДУ</div><h2>Маленькі кроки.<br>Справжні відкриття.</h2></div><p class="section-aside">Одна місія — одна нова навичка.<br>Рухаюся у своєму темпі й перевіряю,<br>що можу пояснити результат.</p></div>
+    <div class="ready-strip"><div class="ready-title"><span>✓</span><div><strong>Моя стартова база готова</strong><small>Підтверджено під час перевірки Raspberry Pi</small></div></div><div class="ready-items"><span>✓ Плата є</span><span>✓ ПЗ встановлено</span><span>✓ Набір Freenove є</span></div></div>
+    <div class="route-layout">
+      <aside class="progress-card"><div class="eyebrow light">МІЙ НАСТУПНИЙ КРОК</div><div class="mission-symbol" aria-hidden="true">↗</div><h3 id="next-title">Привіт, Python!</h3><p id="next-description">Запускаю першу програму та знайомлюся з терміналом.</p><button class="button cream" id="continue">Почати місію <span>→</span></button><div class="progress-meta"><span>Мій прогрес</span><strong id="progress-text">0 / 10</strong></div><div class="progress-track" role="progressbar" aria-label="Виконані місії" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="progress-fill"></span></div><p class="local-note">Відмітки й нотатки зберігаються в цьому браузері. Можна зберегти резервну копію в щоденнику.</p></aside>
+      <div class="mission-list"><div class="filters" role="group" aria-label="Фільтр місій"><button class="filter active" data-filter="all" aria-pressed="true">Усі місії</button><button class="filter" data-filter="start" aria-pressed="false">Перші кроки</button><button class="filter" data-filter="light" aria-pressed="false">Світло й логіка</button><button class="filter" data-filter="sensor" aria-pressed="false">Датчики</button></div><div id="missions"></div><p class="route-tip">✳ Починаю з першої невиконаної місії. Кожну можна відкрити наперед, щоб побачити, що чекає далі.</p></div>
+    </div>
+  </section>
+
+  <section class="workbench-section" id="workbench"><div class="wrap">
+    <div class="section-top"><div><div class="eyebrow">02 / ІНСТРУМЕНТИ ДЛЯ ВЕЛИКИХ ІДЕЙ</div><h2>На моєму столі</h2></div><p class="section-aside">Ноутбук допомагає писати код.<br>Raspberry Pi оживляє його.<br>Набір перетворює ідеї на схеми.</p></div>
+    <div class="tools-grid">
+      <article class="tool-card mac-card"><div class="tool-number">ІНСТРУМЕНТ 01</div><div class="mac-illustration" aria-hidden="true"><div class="mac-screen"><span>hello, world<span class="cursor">_</span></span><small>myroslav@lab ~ %</small></div><div class="mac-base"></div></div><h3>Мій MacBook Neo</h3><p>Тут народжуються ідеї, зберігаються фото й пишеться код. Через SSH я підключаюся до Raspberry Pi.</p><span class="tool-tag">МІЙ ЦЕНТР КЕРУВАННЯ</span></article>
+      <article class="tool-card pi-card"><div class="tool-number">ІНСТРУМЕНТ 02</div><div class="board-illustration" aria-hidden="true"><div class="pin-row"></div><div class="chip">Pi<span>5</span></div><div class="ports"><i></i><i></i><i></i></div><div class="board-dot"></div></div><h3>Raspberry Pi 5</h3><p>Маленький комп’ютер, який керує світлом і читає датчики. 4 ГБ RAM, 64-бітна система та Python 3.13.</p><span class="tool-tag">ПЛАТУ Й GPIO ПЕРЕВІРЕНО</span></article>
+      <article class="tool-card kit-card"><div class="tool-number">ІНСТРУМЕНТ 03</div><div class="kit-illustration" aria-hidden="true"><span class="part-led"><i></i></span><span class="part-resistor"></span><span class="part-button"></span><span class="kit-text">FREENOVE<br><small>BUILD SOMETHING.</small></span></div><h3>Freenove Starter Kit</h3><p>Макетна плата, світлодіоди, кнопки й датчики. Обираю корисні досліди з офіційного посібника.</p><span class="tool-tag">ДЕТАЛІ ДЛЯ МОЇХ ВИНАХОДІВ</span></article>
+    </div>
+    <details class="grownup"><summary><span>✳</span> Куточок дорослого: що підготувати перед уроками <span class="summary-plus">+</span></summary><div class="grownup-body"><p>Під час перевірки 1 листопада 2026 року на Pi вже були Python 3.13.5, gpiozero 2.0.1, lgpio, smbus, smbus2, spidev і Thonny. Ініціалізація GPIO успішна; схеми ще не тестувалися.</p><ol><li>Перенесіть папку потрібного уроку на Pi разом з усіма її файлами. Завантаження коду є всередині кожної місії.</li><li>Перед місіями 7–9 увімкніть I²C у <code>sudo raspi-config</code>, перезавантажте Pi та перевірте появу <code>/dev/i2c-1</code>. Визначте, який ADC є в наборі: ADS7830 чи PCF8591.</li><li>SPI зараз теж не ввімкнений, але для цього стартового маршруту він не потрібен.</li><li>Сервоприводи з pigpio, DHT11, класичний WS2812, двигуни, реле, пайку та камеру залишаємо на наступний етап: вони потребують додаткової підготовки чи перевірки сумісності Pi 5.</li></ol><p><strong>Разом перед кожною схемою:</strong> коректно завершіть роботу Pi, від’єднайте живлення й лише тоді переставляйте проводи. GPIO має логіку 3,3 В: не подавайте на нього 5 В. LED підключайте через резистор. Дорослий перевіряє схему й орієнтацію шлейфа перед увімкненням.</p><p>Цей сайт показує маршрут та пояснення. Запуск програм відбувається окремо на Raspberry Pi.</p><a href="assets/freenove-python.pdf" target="_blank" rel="noopener">Відкрити повний посібник Freenove (PDF, 26 МБ) ↗</a></div></details>
+  </div></section>
+
+  <section class="wrap about-section" id="about"><div class="about-photo"><img src="assets/memory-4157.jpg" alt="Мирослав усміхається" loading="lazy" width="1600" height="1200"><span class="photo-note">Цікавість — мій суперзаряд ✳</span></div><div class="about-copy"><div class="eyebrow">03 / ТРОХИ БІЛЬШЕ ПРО МЕНЕ</div><h2>У мене завжди<br>є наступна ідея<span class="orange">.</span></h2><p>Моя історія з роботами почалася з Arduino. Я вже зробив понад 10 роботів — і хочу навчитися ще більше. Тепер поруч зі мною Raspberry Pi та ціла коробка можливостей.</p><div class="about-facts"><div><span class="fact-icon">♞</span><div><h3>Думаю на кілька ходів уперед</h3><p>Люблю шахи. У коді теж корисно спочатку придумати план, а потім перевірити свій хід.</p></div></div><div><span class="fact-icon">✎</span><div><h3>Моя школа — Бойко</h3><p>Люблю свою школу Бойко в Харкові. Цікаві запитання зі школи беру із собою в майстерню.</p></div></div><div><span class="fact-icon">♡</span><div><h3>Моя найкраща команда</h3><p>Люблю своїх батьків, бабусь, дідусів і сестру Машу. Свої відкриття хочу ділити з ними.</p></div></div></div></div></section>
+
+  <section class="album-section wrap" id="album"><div class="section-top"><div><div class="eyebrow">04 / МІЙ СВІТ У КАДРІ</div><h2>Між винаходами</h2></div><p class="section-aside">Подорожі, усмішки та моменти,<br>які хочеться зберегти.<br>Мій особистий фотоальбом.</p></div><div class="photo-grid">
+    <button class="album-photo tall" data-photo="4088" data-caption="Моменти поруч" aria-label="Збільшити фото: Моменти поруч"><img src="assets/memory-4088.jpg" alt="Мирослав у транспорті під час подорожі" loading="lazy" width="1200" height="1600"><span>01 / Моменти поруч <i>↗</i></span></button>
+    <button class="album-photo" data-photo="4104" data-caption="Назустріч пригодам" aria-label="Збільшити фото: Назустріч пригодам"><img src="assets/memory-4104.jpg" alt="Мирослав біля пасажирського літака" loading="lazy" width="1600" height="1200"><span>02 / Назустріч пригодам <i>↗</i></span></button>
+    <button class="album-photo" data-photo="4094" data-caption="Досліджую світ" aria-label="Збільшити фото: Досліджую світ"><img src="assets/memory-4094.jpg" alt="Мирослав у просторому залі аеропорту" loading="lazy" width="1600" height="1200"><span>03 / Досліджую світ <i>↗</i></span></button>
+  </div><p class="album-footnote">Ще два мої фото — на початку сайту та в розділі «Про мене».</p></section>
+
+  <section class="journal-section" id="journal"><div class="wrap journal-layout"><div><div class="eyebrow light">05 / СЬОГОДНІ Я ЗРОЗУМІВ…</div><h2>Великі ідеї<br>починаються<br>з нотатки.</h2><p>Що вийшло? Що здивувало?<br>І який винахід хочеться зробити далі?</p><div class="journal-doodle" aria-hidden="true">✎<span>ідея → дослід → відкриття</span></div></div><div class="journal-paper"><div class="paper-top"><span>ЗАПИСНИК МИРОСЛАВА</span><span>✳</span></div><label for="journal-note">Мої відкриття та наступні ідеї</label><textarea id="journal-note" rows="7" maxlength="6000" placeholder="Сьогодні я спробував…&#10;У мене вийшло…&#10;Наступного разу хочу…"></textarea><div class="save-status" id="save-status" role="status">Нотатки залишаються в цьому браузері.</div><div class="journal-actions"><button class="button small dark" id="export">Зберегти копію ↓</button><label class="import-label" for="import">Відновити з копії <input type="file" id="import" accept="application/json,.json"></label></div><p class="paper-note">Копія містить нотатки та відмітки місій. Збережи її разом із дорослим, щоб перенести прогрес в інший браузер.</p></div></div></section>
+  <section class="wrap closing"><span>♞</span><p>Як у шахах: кожен маленький хід<br>наближає до великого задуму.</p><a href="#route" aria-label="Повернутися до маршруту">↗</a></section>
+</main>
+<footer class="footer wrap"><div class="footer-main"><a class="brand" href="#home"><span class="brand-icon">м<span>·</span></span><span>МАЙСТЕРНЯ МИРОСЛАВА<span class="brand-sub">ЗРОБЛЕНО З ЦІКАВОСТІ ТА ЛЮБОВІ</span></span></a><span>Особистий сімейний щоденник · 2026</span></div><p>Маршрут адаптовано за матеріалами <a href="https://github.com/Freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi" target="_blank" rel="noopener">Freenove Complete Starter Kit</a>. Код і посібник Freenove: <a href="assets/FREENOVE-LICENSE.txt" target="_blank" rel="noopener">CC BY-NC-SA 3.0</a>. Фото надані родиною. <a href="https://gpiozero.readthedocs.io/en/stable/api_pins.html" target="_blank" rel="noopener">Про GPIO на Pi 5 ↗</a></p></footer>
+<dialog id="lesson-dialog" aria-labelledby="lesson-title"><div class="dialog-bar"><span id="lesson-kicker">МІСІЯ</span><button class="icon-button" data-close="lesson-dialog" aria-label="Закрити місію">×</button></div><div id="lesson-content"></div></dialog>
+<dialog id="photo-dialog" aria-label="Перегляд фотографії"><button class="icon-button photo-close" data-close="photo-dialog" aria-label="Закрити фото">×</button><img id="full-photo" alt=""><p id="photo-caption"></p></dialog>
+<div class="toast" id="toast" role="status"></div>
+</body>
+</html>
