@@ -4,7 +4,12 @@ on:
   push:
     branches: [main]
     paths:
-      - 'dist/**'
+      - 'index.html'
+      - 'style.css'
+      - 'app.js'
+      - 'assets/**'
+      - 'lessons/**'
+      - '.nojekyll'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -26,12 +31,21 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v6
+      - name: Verify actual website entrypoint
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f app.js
+          test -f assets/memory-4072.jpg
+          grep -Fq 'id="home"' index.html
+          grep -Fq 'id="lesson-dialog"' index.html
+          node --check app.js
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: .
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4

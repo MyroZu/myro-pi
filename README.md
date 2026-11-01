@@ -6,19 +6,19 @@
 
 GitHub Pages: https://myrozu.github.io/myro-pi/
 
-Статичні файли розміщено в `dist/`. Збірка та встановлення залежностей не потрібні. Усі посилання на ресурси відносні, тому сайт працює в підкаталозі `/myro-pi/`.
+Статичні файли розміщено в корені репозиторію; головна сторінка — `index.html`. Збірка та встановлення залежностей не потрібні. Усі посилання на ресурси відносні, тому сайт працює в підкаталозі `/myro-pi/`.
 
 ## Локальний перегляд
 
 ```sh
-python3 -m http.server 8765 --directory dist
+python3 -m http.server 8765
 ```
 
 Відкрити http://localhost:8765 .
 
 ## Публікація
 
-Workflow `.github/workflows/pages.yml` публікує папку `dist` через GitHub Actions після змін у гілці `main`. У Settings → Pages джерелом має бути GitHub Actions. Workflow також можна запустити вручну.
+Workflow `.github/workflows/pages.yml` публікує корінь репозиторію через GitHub Actions після змін у гілці `main`. У Settings → Pages джерелом має бути GitHub Actions. Workflow також можна запустити вручну.
 
 ## Дані та навчання
 
@@ -28,6 +28,6 @@ Workflow `.github/workflows/pages.yml` публікує папку `dist` чер
 
 ## Матеріали та права
 
-Матеріали й код Freenove взято з наданої локальної копії [Freenove Complete Starter Kit](https://github.com/Freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi). Вони розповсюджуються за CC BY-NC-SA 3.0; текст ліцензії є в `dist/assets/FREENOVE-LICENSE.txt` та архівах уроків. Українські пояснення адаптовано для цього навчального маршруту. Завершальна творча місія — окремий власний проєкт за вивченими темами.
+Матеріали й код Freenove взято з наданої локальної копії [Freenove Complete Starter Kit](https://github.com/Freenove/Freenove_Complete_Starter_Kit_for_Raspberry_Pi). Вони розповсюджуються за CC BY-NC-SA 3.0; текст ліцензії є в `assets/FREENOVE-LICENSE.txt` та архівах уроків. Українські пояснення адаптовано для цього навчального маршруту. Завершальна творча місія — окремий власний проєкт за вивченими темами.
 
 Фото надані користувачем. Оригінальні HEIC не змінювалися; вебкопії зорієнтовано, оптимізовано й очищено від EXIF. Шрифт Manrope підключений через Google Fonts із системним fallback.
